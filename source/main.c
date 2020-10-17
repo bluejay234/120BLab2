@@ -38,5 +38,5 @@ int main(void)
 		PORTB = tmpB;	
 
 	}
-	return 1;
+	return 0;
 }
