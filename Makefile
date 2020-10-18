@@ -15,7 +15,7 @@ OBJS=$(patsubst $(PATHS)%,$(PATHO)%,$(SOURCES:.c=.o))
 
 CLEAN=rm -rf
 # Simulator
-SIMAVRDIR=/usr/csshare/pkgs/simavr/
+SIMAVRDIR=/home/lab/simavr-master/simavr/
 SIMAVR=simavr
 
 # Compiler
