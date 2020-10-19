@@ -22,7 +22,6 @@ int main(void)
 
         while(1)
         {
-
                 tmpA = PINA;//temp value hold input
 
                 if (tmpA != 0x00) //true if input greater than 1 
@@ -30,20 +29,17 @@ int main(void)
                 	while(tmpA != 0x00)//will run as long as input contains greater than 0
 			{
 				count=count+1;
-				tmpA=tmpA>>1;//fills in temp values with 0 
+				tmpA=tmpA>>1;//fills in temp value with 0 
 			}
 
-			PORTB = cntavail; // sets output to number of available spots
+			PORTB = cntavail; // sets output to number counted
 			cntavail=0x00;
                 }
                 else //resets count and output when no input
                 {
-                        cntavail=0;
+                        cntavail=0x00;
 			PORTB = 0x00;
                 }
-
-                PORTB = tmpB;
-
         }
         return 1;
 }
